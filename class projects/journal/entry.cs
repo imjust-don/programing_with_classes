@@ -19,7 +19,8 @@ public class Entry
         string CompletedEntry = $@"
 {_date}
 Prompt: {_prompt}
-Entry: {_entry}";
+Entry: {_entry}
+";
 
         return CompletedEntry;
     }

@@ -3,6 +3,8 @@
 using System.Security.Cryptography.X509Certificates;
 
 int x = 0;
+Journal Journal = new Journal();
+
 Console.WriteLine("Welcome to your Journal!");
 do
 {
@@ -16,8 +18,6 @@ Please select an option from below
 ----------------------------------");
 
 x = int.Parse(Console.ReadLine());
-
-Journal Journal = new Journal();
 
 if (x == 1)
 {

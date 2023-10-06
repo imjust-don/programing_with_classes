@@ -12,8 +12,9 @@ public class Journal
     {
         foreach (string line in _entries)
         {
-        File.WriteAllText(FileName, line);
+        File.AppendAllText(FileName, line);
         }
+        Console.WriteLine($"{FileName} was saved Successfully");
     }
 
      public void Display()
