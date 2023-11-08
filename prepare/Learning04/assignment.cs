@@ -10,8 +10,8 @@ class Assingment
 
     }
 
-    string GetSummary(string _StudentName, string _Topic)
+   public string GetSummary()
     {
-        return $"{_StudentName}, {_Topic}";
+        return _StudentName + " - " + _Topic;
     }
 }
