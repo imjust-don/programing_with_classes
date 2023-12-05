@@ -17,7 +17,7 @@ class Order
             totalPrice += product.GetTotalPrice();
         }
 
-        // Add shipping cost based on customer location
+        
         if (customer.IsInUSA())
         {
             totalPrice += 5;

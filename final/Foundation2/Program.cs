@@ -6,11 +6,11 @@ class Program
     {
        
         var usaAddress = new Address("123 Main St", "Anytown", "CA", "USA");
-        var nonUsaAddress = new Address("456 High St", "Othercity", "Province", "Canada");
+        var nonUsaAddress = new Address("456 High St", "Winnepeg", "Province", "Canada");
 
         
         var usaCustomer = new Customer("John Doe", usaAddress);
-        var nonUsaCustomer = new Customer("Jane Smith", nonUsaAddress);
+        var nonUsaCustomer = new Customer("Brother Heyes", nonUsaAddress);
 
         
         var product1 = new Product("Laptop", 101, 800, 2);
