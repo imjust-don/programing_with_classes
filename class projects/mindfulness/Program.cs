@@ -142,15 +142,38 @@ class Program
 {
     static void Main()
     {
-        // Example usage
-        MindfulnessActivity breathingActivity = new BreathingActivity(5);
+        Console.Write(@"
+--------------------------------------------------------------
+Welcome to the mindfullness activity. PLease choose one below
+--------------------------------------------------------------
+    1. Breathing Activity
+    2. Reflection activity
+    3. Listing Activity
+    4. Quit
+
+Please select an option by number: ");
+    string option = Console.ReadLine();
+    int.tryPars(option, out int activity_choice);
+    if (activity_choice == 1)
+    {
+        Console.WriteLine("");
+        Console.Write("How long in seconds would you like this activity?");
+        string Seconds = Console.ReadLine();
+        int.tryPars(Seconds, out int seconds_activity);
+
+        MindfulnessActivity breathingActivity = new BreathingActivity(seconds_activity);
         breathingActivity.DoActivity();
 
-        MindfulnessActivity reflectionActivity = new ReflectionActivity(3);
-        reflectionActivity.DoActivity();
+    }
 
-        MindfulnessActivity listingActivity = new ListingActivity(4);
-        listingActivity.DoActivity();
+
+
+    //     MindfulnessActivity reflectionActivity = new ReflectionActivity(3);
+    //     reflectionActivity.DoActivity();
+
+    //     MindfulnessActivity listingActivity = new ListingActivity(4);
+    //     listingActivity.DoActivity();
+    // 
     }
 }
 
